@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+  display: none;
+}
+.scrollSet::-webkit-scrollbar {
+  display: flex !important;
+  background-color: #c4c4c4 !important;
+  width: 6px !important;
+  border-radius: 8px !important;
+}
+.scrollSet::-webkit-scrollbar-thumb {
+  background-color: #febf32 !important;
+}
+
+.dynamicTrans {
+  transition: all 0.2s linear;
+}
+.dynamicTrans:hover {
+  transform: scale(1.05);
+}
+.preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  overflow: auto;
+  position: relative;
+}
+.player > div > .rec-arrow-right {
+  position: absolute !important;
+  right: 18rem !important;
+  top: 27rem !important;
+}
+.player > div > .rec-arrow-left {
+  position: absolute !important;
+  left: 18rem !important;
+  top: 27rem !important;
+}
+.ali > div > .rec-arrow-right {
+  position: absolute !important;
+  right: 45rem !important;
+  top: 40rem !important;
+}
+.ali > div > .rec-arrow-left {
+  position: absolute !important;
+  left: 45rem !important;
+  top: 40rem !important;
+}
+.rec-dot_active {
+  margin-top: 12px !important;
+}
+.ali > .rec-pagination > .rec-dot_active {
+  margin-top: 25px !important;
+}
+.player > .rec-pagination > .rec-dot_active {
+  margin-top: 12px !important;
+}
